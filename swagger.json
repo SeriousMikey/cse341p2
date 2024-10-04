@@ -5,10 +5,9 @@
     "title": "REST API",
     "description": ""
   },
-  "host": "localhost:3000",
+  "host": "cse341p2.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http",
     "https"
   ],
   "paths": {
