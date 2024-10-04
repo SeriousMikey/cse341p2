@@ -1,4 +1,5 @@
 const router = require("express").Router();
+router.use("/", require("./swagger"));
 router.use("/donors", require("./donors"));
 router.use("/charities", require("./charities"));
 router.use("/donations", require("./donations"));
