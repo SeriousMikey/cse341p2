@@ -9,16 +9,28 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "body-parser": "^1.20.3",
     "dotenv": "^16.4.5",
     "express": "^4.21.0",
+    "express-validator": "^7.2.0",
+    "install": "^0.13.0",
     "mongodb": "^6.9.0",
+    "npm": "^10.9.0",
     "swagger-autogen": "^2.23.7",
-    "swagger-ui-express": "^5.0.1"
+    "swagger-ui-express": "^5.0.1",
+    "validatorjs": "^3.22.1"
   },
   "devDependencies": {
-    "nodemon": "^3.1.6"
-  }
+    "nodemon": "^3.1.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SeriousMikey/cse341p2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SeriousMikey/cse341p2/issues"
+  },
+  "homepage": "https://github.com/SeriousMikey/cse341p2#readme",
+  "description": ""
 }
