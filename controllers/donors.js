@@ -3,12 +3,12 @@ const ObjectId = require("mongodb").ObjectId;
 
 
 const getAll = async (req, res) => {
-    mongodb
-    .getDatabase()
+    mongodb.getDatabase()
     .db()
     .collection("donors")
     .find()
-    .toArray((err, donors) => {
+    .toArray()
+    .then((err, donors) => {
         if (err) {
             res.status(500).json({ message: err});
         }
@@ -26,7 +26,8 @@ const getSingle = async (req, res) => {
     .db()
     .collection("donors")
     .find({ _id: donorId })
-    .toArray((err, donors) => {
+    .toArray()
+    .then((err, donors) => {
         if (err) {
             res.status(500).json({ message: err});
         }

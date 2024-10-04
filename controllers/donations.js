@@ -10,7 +10,8 @@ const getAll = async (req, res) => {
     .db()
     .collection("donations")
     .find()
-    .toArray((err, donation) => {
+    .toArray()
+    .then((err, donation) => {
         if (err) {
             res.status(500).json({ message: err});
         }
@@ -28,7 +29,8 @@ const getSingle = async (req, res) => {
     .db()
     .collection("donations")
     .find({ _id: donationId })
-    .toArray((err, donations) => {
+    .toArray()
+    .then((err, donations) => {
         if (err) {
             res.status(500).json({ message: err});
         }
